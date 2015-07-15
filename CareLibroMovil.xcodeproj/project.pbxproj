@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E35C46E1B559719002CDD3B /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E35C46D1B559719002CDD3B /* FriendsTableViewController.swift */; };
+		6E501A5C1B3A061A0050375F /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E501A5B1B3A061A0050375F /* PostModel.swift */; };
+		6E501A5E1B3B18BF0050375F /* ShowPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E501A5D1B3B18BF0050375F /* ShowPostViewController.swift */; };
+		6EBF6EA61B2CC07400EF6868 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF6EA51B2CC07400EF6868 /* SwiftyJSON.swift */; };
+		6EBF6EA91B2CDAB500EF6868 /* Conection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBF6EA81B2CDAB500EF6868 /* Conection.swift */; };
 		6ED08EF01B2904F400E0DA70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED08EEF1B2904F400E0DA70 /* AppDelegate.swift */; };
 		6ED08EF21B2904F400E0DA70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED08EF11B2904F400E0DA70 /* ViewController.swift */; };
 		6ED08EF51B2904F400E0DA70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ED08EF31B2904F400E0DA70 /* Main.storyboard */; };
 		6ED08EF71B2904F400E0DA70 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED08EF61B2904F400E0DA70 /* Images.xcassets */; };
 		6ED08EFA1B2904F400E0DA70 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED08EF81B2904F400E0DA70 /* LaunchScreen.xib */; };
 		6ED08F061B2904F400E0DA70 /* CareLibroMovilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED08F051B2904F400E0DA70 /* CareLibroMovilTests.swift */; };
+		6ED08F101B29F3C100E0DA70 /* SignInTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED08F0F1B29F3C100E0DA70 /* SignInTableViewController.swift */; };
+		6ED08F121B2A26A800E0DA70 /* SignUpTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED08F111B2A26A800E0DA70 /* SignUpTableViewController.swift */; };
+		6ED08F161B2B4DE300E0DA70 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED08F151B2B4DE300E0DA70 /* HomeTableViewController.swift */; };
+		6ED08F181B2B6DFC00E0DA70 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED08F171B2B6DFC00E0DA70 /* PostTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E35C46D1B559719002CDD3B /* FriendsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
+		6E501A5B1B3A061A0050375F /* PostModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		6E501A5D1B3B18BF0050375F /* ShowPostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowPostViewController.swift; sourceTree = "<group>"; };
+		6EBF6EA51B2CC07400EF6868 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		6EBF6EA71B2CC07F00EF6868 /* SwiftyJSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		6EBF6EA81B2CDAB500EF6868 /* Conection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conection.swift; sourceTree = "<group>"; };
 		6ED08EEA1B2904F400E0DA70 /* CareLibroMovil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareLibroMovil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED08EEE1B2904F400E0DA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ED08EEF1B2904F400E0DA70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +51,10 @@
 		6ED08EFF1B2904F400E0DA70 /* CareLibroMovilTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareLibroMovilTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED08F041B2904F400E0DA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6ED08F051B2904F400E0DA70 /* CareLibroMovilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareLibroMovilTests.swift; sourceTree = "<group>"; };
+		6ED08F0F1B29F3C100E0DA70 /* SignInTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInTableViewController.swift; sourceTree = "<group>"; };
+		6ED08F111B2A26A800E0DA70 /* SignUpTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTableViewController.swift; sourceTree = "<group>"; };
+		6ED08F151B2B4DE300E0DA70 /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		6ED08F171B2B6DFC00E0DA70 /* PostTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +96,19 @@
 		6ED08EEC1B2904F400E0DA70 /* CareLibroMovil */ = {
 			isa = PBXGroup;
 			children = (
+				6EBF6EA51B2CC07400EF6868 /* SwiftyJSON.swift */,
+				6EBF6EA71B2CC07F00EF6868 /* SwiftyJSON.h */,
 				6ED08EEF1B2904F400E0DA70 /* AppDelegate.swift */,
 				6ED08EF11B2904F400E0DA70 /* ViewController.swift */,
 				6ED08EF31B2904F400E0DA70 /* Main.storyboard */,
+				6E35C46D1B559719002CDD3B /* FriendsTableViewController.swift */,
+				6E501A5D1B3B18BF0050375F /* ShowPostViewController.swift */,
+				6ED08F171B2B6DFC00E0DA70 /* PostTableViewController.swift */,
+				6ED08F111B2A26A800E0DA70 /* SignUpTableViewController.swift */,
+				6EBF6EA81B2CDAB500EF6868 /* Conection.swift */,
+				6ED08F0F1B29F3C100E0DA70 /* SignInTableViewController.swift */,
+				6ED08F151B2B4DE300E0DA70 /* HomeTableViewController.swift */,
+				6E501A5B1B3A061A0050375F /* PostModel.swift */,
 				6ED08EF61B2904F400E0DA70 /* Images.xcassets */,
 				6ED08EF81B2904F400E0DA70 /* LaunchScreen.xib */,
 				6ED08EED1B2904F400E0DA70 /* Supporting Files */,
@@ -161,6 +190,7 @@
 				TargetAttributes = {
 					6ED08EE91B2904F400E0DA70 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = 9DGN3WV4YY;
 					};
 					6ED08EFE1B2904F400E0DA70 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -212,8 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED08F101B29F3C100E0DA70 /* SignInTableViewController.swift in Sources */,
+				6E501A5C1B3A061A0050375F /* PostModel.swift in Sources */,
+				6ED08F181B2B6DFC00E0DA70 /* PostTableViewController.swift in Sources */,
+				6E35C46E1B559719002CDD3B /* FriendsTableViewController.swift in Sources */,
+				6E501A5E1B3B18BF0050375F /* ShowPostViewController.swift in Sources */,
 				6ED08EF21B2904F400E0DA70 /* ViewController.swift in Sources */,
 				6ED08EF01B2904F400E0DA70 /* AppDelegate.swift in Sources */,
+				6EBF6EA91B2CDAB500EF6868 /* Conection.swift in Sources */,
+				6ED08F121B2A26A800E0DA70 /* SignUpTableViewController.swift in Sources */,
+				6EBF6EA61B2CC07400EF6868 /* SwiftyJSON.swift in Sources */,
+				6ED08F161B2B4DE300E0DA70 /* HomeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CareLibroMovil/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CareLibroMovil/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +450,7 @@
 				6ED08F0B1B2904F400E0DA70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6ED08F0C1B2904F400E0DA70 /* Build configuration list for PBXNativeTarget "CareLibroMovilTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +459,7 @@
 				6ED08F0E1B2904F400E0DA70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
