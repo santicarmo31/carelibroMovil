@@ -47,7 +47,8 @@ class SignInViewController: UITableViewController {
     func sendData(userLogin:JSON){
         let conn = Conection()
         let isLogin = conn.login(userLogin)
-        if isLogin["success"].bool == true {
+        println(isLogin["success"].boolValue)
+        if isLogin["success"].boolValue == true {
             var token:String = isLogin["auth"]["token"].stringValue
             NSUserDefaults.standardUserDefaults().setObject(token, forKey: "tokencito")
             performSegueWithIdentifier("Home", sender: nil)

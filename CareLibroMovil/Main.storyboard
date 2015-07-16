@@ -74,9 +74,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Ne8-Jc-qJF" kind="presentation" identifier="Home" id="NAh-OA-WZN"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -114,11 +111,12 @@
                     <connections>
                         <outlet property="txtName" destination="gUw-wy-q6B" id="ewk-xH-1O2"/>
                         <outlet property="txtPassword" destination="eRC-tz-DUC" id="fgO-fv-yod"/>
+                        <segue destination="Ne8-Jc-qJF" kind="presentation" identifier="Home" id="RgA-Ds-faY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAD-fR-apT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="327" y="-399"/>
+            <point key="canvasLocation" x="321" y="-399"/>
         </scene>
         <!--Post-->
         <scene sceneID="u4j-2S-oCj">
@@ -507,7 +505,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cwc-Po-6rn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="327" y="281"/>
+            <point key="canvasLocation" x="321" y="296"/>
         </scene>
         <!--Friends Table View Controller-->
         <scene sceneID="ioi-7m-r10">
@@ -546,7 +544,6 @@
         <!--Item-->
         <scene sceneID="que-r4-ASY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F8L-wh-EyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tnY-zp-zeF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="OVT-AO-ke8"/>
                     <toolbarItems/>
@@ -559,6 +556,7 @@
                         <segue destination="EXt-9P-Dp5" kind="relationship" relationship="rootViewController" id="KxO-mu-RYZ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8L-wh-EyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="327" y="1027"/>
         </scene>

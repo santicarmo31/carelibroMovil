@@ -11,6 +11,7 @@ import UIKit
 class FriendsTableViewController: UITableViewController {
 
     let con = Conection()
+    var friends = [[String:String]]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,7 +38,7 @@ class FriendsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 2
+        return friends.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -48,7 +49,7 @@ class FriendsTableViewController: UITableViewController {
         //            "user_id":posts[indexPath.row]["user_id"].stringValue]
         //        postArray.append(dict)
         //        println(postArray)
-        cell.textLabel?.text = "rica"
+        cell.textLabel?.text = friends[indexPath.row]["name"]
         return cell
     }
     
@@ -57,10 +58,10 @@ class FriendsTableViewController: UITableViewController {
       let alertController = UIAlertController(title: "Añadir amigo", message: nil, preferredStyle: .Alert)
         let newFriendAction = UIAlertAction(title: "Nuevo amigo", style: .Default, handler: {
             action in
-                var friend = ["friend_id":"1"]
+                var friend = ["username":(alertController.textFields?.first as! UITextField).text]
                 var jsnFriend = JSON(friend)
                 var x = (self.con.addFriend(jsnFriend))
-                println(x)
+                self.tableView.reloadData()
         })
         let cancelAction = UIAlertAction(title: "Canecelar", style: .Cancel, handler: nil)
         var usernameTxt: AnyObject? = alertController.textFields?.first
@@ -72,6 +73,32 @@ class FriendsTableViewController: UITableViewController {
         presentViewController(alertController, animated: true, completion: nil)
 
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        friends.removeAll(keepCapacity: false)
+        let friend = con.getFriends()
+        for (index: String, subJson: JSON) in friend {
+            for(var i = 0; i < subJson.count; i++){
+                var dict = ["name":subJson[i]["name"].stringValue,
+                            "id":subJson[i]["id"].stringValue]
+                friends.append(dict)
+            }
+
+        }
+        tableView.reloadData()
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            
+            let didDelete = con.deleteFriend(friends[indexPath.row]["id"]!)
+            if didDelete == true{
+                friends.removeAtIndex(indexPath.row)
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Fade)
+            }
+        }
+    }
+    
     
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

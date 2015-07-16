@@ -151,6 +151,44 @@ class Conection: NSObject {
         return (JSON(data: data!)["success"].boolValue)
     }
     
+    func getFriends()->JSON{
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/api/v1/users")!)
+        var response:NSURLResponse?
+        
+        request.HTTPMethod = "GET"
+        
+        var err: NSError?
+        
+        var returned:JSON?
+        var token:String = NSUserDefaults.standardUserDefaults().objectForKey("tokencito") as! String
+        
+        request.addValue("Token token="+token,forHTTPHeaderField: "Authorization")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: &err)
+        return (JSON(data: data!))
+    }
+    
+    func deleteFriend(friendId: String) -> Bool{
+        var request = NSMutableURLRequest(URL: NSURL(string: "http://localhost:3000/api/v1/friendships/\(friendId)")!)
+        var response:NSURLResponse?
+        
+        request.HTTPMethod = "DELETE"
+        
+        var err: NSError?
+        
+        var returned:JSON?
+        var token:String = NSUserDefaults.standardUserDefaults().objectForKey("tokencito") as! String
+
+        request.addValue("Token token="+token,forHTTPHeaderField: "Authorization")
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        var data = NSURLConnection.sendSynchronousRequest(request, returningResponse: &response, error: &err)
+        return (JSON(data: data!)["success"].boolValue)
+    }
+
 
 }
 
